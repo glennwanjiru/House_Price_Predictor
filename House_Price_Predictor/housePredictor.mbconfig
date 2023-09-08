@@ -667,8 +667,17 @@
   "TrainingOption": {
     "Version": 2,
     "Subsampling": false,
+    "Tuner": "eci-cfo",
     "Type": "ClassificationTrainingOption",
     "TrainingTime": 10,
-    "LabelColumn": "SalePrice"
+    "OptimizeMetric": "MacroAccuracy",
+    "LabelColumn": "SalePrice",
+    "AvailableTrainers": [
+      "SDCA",
+      "LBFGS",
+      "LGBM",
+      "FASTTREE",
+      "FASTFOREST"
+    ]
   }
 }
